@@ -225,6 +225,113 @@
         .tab-content.active { display: block; animation: fadeUp 0.5s ease-out; }
 
         html { scroll-behavior: smooth; }
+
+     
+/* =====================================
+   MOBILE RESPONSIVE FIX
+===================================== */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img, video, iframe, svg {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+
+    body {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    nav > div:first-child {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero-gradient {
+        min-height: auto;
+        padding-top: 110px;
+        padding-bottom: 70px;
+    }
+
+    section {
+        padding-left: 16px !important;
+        padding-right: 16px !important;
+    }
+
+    .grid {
+        min-width: 0;
+    }
+
+    .gun-card {
+        min-width: 0;
+        width: 100%;
+    }
+
+    .gun-card:hover {
+        transform: none;
+    }
+
+    h1 {
+        font-size: clamp(2rem, 8vw, 3.5rem);
+        line-height: 1.15;
+        overflow-wrap: anywhere;
+    }
+
+    h2 {
+        font-size: clamp(1.6rem, 6vw, 2.5rem);
+        line-height: 1.2;
+    }
+
+    p {
+        overflow-wrap: break-word;
+    }
+
+    .marquee-track {
+        animation-duration: 55s;
+    }
+
+    footer {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+
+    nav .text-lg {
+        font-size: 16px;
+    }
+
+    #mobileMenu {
+        width: 100%;
+    }
+
+    .glass {
+        min-width: 0;
+    }
+
+    button, a {
+        -webkit-tap-highlight-color: transparent;
+    }
+}
+
+
+
+     
     </style>
 
  <!-- Google Analytics - IronVault -->
